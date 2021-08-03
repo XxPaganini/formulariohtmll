@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Complete suas informações;</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type='text' name='nome' id='nome' required>
+            </div>
+            
+            <div class="campo">
+              <label for="sobrenome"><strong>Sobrenome:</strong></label>
+              <input type="text" name="sobrenome" id="sobrenome" required>    
+            </div>
+        </fieldset>
+        <div class="campo">
+          <label for="email"><strong>Email:</strong></label>
+          <input type="email" nome="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Sexo:</strong></label>
+        <label>
+            <input type="radio" name="devweb" value="Masculino" checked>Masculino
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Feminino">Feminino
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Prefiro Não Informar">Prefiro Não Informar
+        </label>
+        </div>
+        <div class="campo">
+            <label for="Estado"><strong>Estado:</strong></label>
+            <select id="Estado">
+                <option selected disabled value="">Selecione</option>
+                <option>CE</option>
+                <option>RN</option>
+                <option>PB</option>
+                <option>RS</option>
+                <option>SP</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="hab"><strong>Selecione suas Habilidades em Programação:</strong></label><br><br>
+                <input type="checkbox" id="hab1" name="hab1" value="HTML">
+                <label for="hab1">HTML</label>
+                <input type="checkbox" id="hab2" name="hab2" value="CSS">
+                <label for="hab2">CSS</label>
+                <input type="checkbox" id="hab3" name="hab3" value="Javascript">
+                <label for="hab3">Javascript</label>
+                <input type="checkbox" id="hab4" name="hab4" value="PHP">
+                <label for="hab4">PHP</label>
+                <input type="checkbox" id="hab5" name="hab5" value="C#++">
+                <label for="hab5">C#++</label>
+                <input type="checkbox" id="hab6" name="hab6" value="Python">
+                <label for="hab6">Python</label>
+                <input type="checkbox" id="hab7" name="hab7" value="Java">
+                <label for="hab7">Java</label>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <label>Me fale sobre você e suas experiências.</label>
+            <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="button" type="submit">Concluído!</button>
+
+    </form>
+</body>
+</html>
